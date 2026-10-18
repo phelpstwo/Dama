@@ -1,0 +1,57 @@
+#MENU JOGO DE DAMA
+print("==============================")
+print("Bem-vindo ao Jogo de Dama!")
+print("==============================")
+print("1 - Jogar")
+print("2 - Placar")
+print("3 - Sair")
+opcao = int(input("Escolha uma opção: "))
+
+jogador_1 = ""
+jogador_2 = ""
+vitoria_1 = 0
+vitoria_2 = 0
+empates = 0
+
+while opcao != 3:
+    if opcao == 1:
+        print("Digite o nome do Jogador 1:")
+        jogador_1 = input("Jogador 1: ")
+        print("Digite o nome do Jogador 2:")
+        jogador_2 = input("Jogador 2: ")
+        print("Iniciando o jogo de dama...")
+        #JOGO EM DESENVOLVIMENTO.....(Codigo do jogo de dama será implementado aqui)
+        resultado = int(input("Digite o resultado do jogo (1 para Jogador 1, 2 para Jogador 2, 3 para empate): "))
+        if resultado == 1:
+            vitoria_1 += 1
+            print("Jogador 1 venceu!")
+        elif resultado == 2:
+            vitoria_2 += 1
+            print("Jogador 2 venceu!")
+        elif resultado == 3:
+            empates += 1
+            print("Empate!")
+        else:
+            print("Resultado inválido.")
+    
+    elif opcao == 2:
+        print("==============================")
+        print("Placar:")
+        print(f"{jogador_1}: {vitoria_1} vitórias")
+        print(f"{jogador_2}: {vitoria_2} vitórias")
+        print(f"Empates: {empates}")
+        print("==============================")
+    
+    elif opcao == 3:
+        print("Saindo do jogo. Até a próxima!")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+
+    print("==============================")
+    print("Bem-vindo ao Jogo de Dama!")
+    print("==============================")
+    print("1 - Jogar")
+    print("2 - Placar")
+    print("3 - Sair")
+    opcao = int(input("Escolha uma opção: "))
