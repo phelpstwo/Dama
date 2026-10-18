@@ -3,8 +3,9 @@ print("==============================")
 print("Bem-vindo ao Jogo de Dama!")
 print("==============================")
 print("1 - Jogar")
-print("2 - Placar")
-print("3 - Sair")
+print("2 - Regras")
+print("3 - Placar")
+print("4 - Sair")
 opcao = int(input("Escolha uma opção: "))
 
 jogador_1 = ""
@@ -13,28 +14,34 @@ vitoria_1 = 0
 vitoria_2 = 0
 empates = 0
 
-while opcao != 3:
+while opcao != 4:
     if opcao == 1:
         print("Digite o nome do Jogador 1:")
         jogador_1 = input("Jogador 1: ")
         print("Digite o nome do Jogador 2:")
         jogador_2 = input("Jogador 2: ")
         print("Iniciando o jogo de dama...")
-        #JOGO EM DESENVOLVIMENTO.....(Codigo do jogo de dama será implementado aqui)
+        print("==============================")
+        print("JOGO EM DESENVOLVIMENTO.....")
+        print("==============================")
         resultado = int(input("Digite o resultado do jogo (1 para Jogador 1, 2 para Jogador 2, 3 para empate): "))
         if resultado == 1:
             vitoria_1 += 1
-            print("Jogador 1 venceu!")
+            print(f"Jogador {jogador_1} venceu!")
         elif resultado == 2:
             vitoria_2 += 1
-            print("Jogador 2 venceu!")
+            print(f"Jogador {jogador_2} venceu!")
         elif resultado == 3:
             empates += 1
             print("Empate!")
         else:
             print("Resultado inválido.")
-    
     elif opcao == 2:
+        print("==============================")
+        print("REGRAS EM DESENVOLVIMENTO.....")
+        print("==============================")
+
+    elif opcao == 3:
         print("==============================")
         print("Placar:")
         print(f"{jogador_1}: {vitoria_1} vitórias")
@@ -42,7 +49,7 @@ while opcao != 3:
         print(f"Empates: {empates}")
         print("==============================")
     
-    elif opcao == 3:
+    elif opcao == 4:
         print("Saindo do jogo. Até a próxima!")
         break
     else:
@@ -52,6 +59,7 @@ while opcao != 3:
     print("Bem-vindo ao Jogo de Dama!")
     print("==============================")
     print("1 - Jogar")
-    print("2 - Placar")
-    print("3 - Sair")
+    print("2 - Regras")
+    print("3 - Placar")
+    print("4 - Sair")
     opcao = int(input("Escolha uma opção: "))
