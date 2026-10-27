@@ -44,8 +44,20 @@ while opcao != 4:
     elif opcao == 3:
         print("==============================")
         print("Placar:")
-        print(f"{jogador_1}: {vitoria_1} vitórias")
-        print(f"{jogador_2}: {vitoria_2} vitórias")
+        if jogador_1 == "":
+            print(f"Jogador 1: {vitoria_1} vitórias")
+        else:
+            if vitoria_1 == 1:
+                print(f"{jogador_1}: {vitoria_1} vitória")
+            else:
+                print(f"{jogador_1}: {vitoria_1} vitórias")
+        if jogador_2 == "":
+            print(f"Jogador 2: {vitoria_2} vitórias")
+        else:
+            if vitoria_2 == 1:
+                print(f"{jogador_2}: {vitoria_2} vitória")
+            else:
+                print(f"{jogador_2}: {vitoria_2} vitórias")
         print(f"Empates: {empates}")
         print("==============================")
     
