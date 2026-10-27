@@ -1,13 +1,5 @@
 #MENU JOGO DE DAMA
-print("==============================")
-print("Bem-vindo ao Jogo de Dama!")
-print("==============================")
-print("1 - Jogar")
-print("2 - Regras")
-print("3 - Placar")
-print("4 - Sair")
-opcao = int(input("Escolha uma opção: "))
-
+opcao = None
 jogador_1 = ""
 jogador_2 = ""
 vitoria_1 = 0
@@ -15,6 +7,14 @@ vitoria_2 = 0
 empates = 0
 
 while opcao != 4:
+    print("==============================")
+    print("Bem-vindo ao Jogo de Dama!")
+    print("==============================")
+    print("1 - Jogar")
+    print("2 - Regras")
+    print("3 - Placar")
+    print("4 - Sair")
+    opcao = int(input("Escolha uma opção: "))
     if opcao == 1:
         print("Digite o nome do Jogador 1:")
         jogador_1 = input("Jogador 1: ")
@@ -49,17 +49,7 @@ while opcao != 4:
         print(f"Empates: {empates}")
         print("==============================")
     
-    elif opcao == 4:
-        print("Saindo do jogo. Até a próxima!")
-        break
-    else:
-        print("Opção inválida. Tente novamente.")
+    elif opcao != 4:
+        print("Opção inválida. Selecione uma opção novamente.")
 
-    print("==============================")
-    print("Bem-vindo ao Jogo de Dama!")
-    print("==============================")
-    print("1 - Jogar")
-    print("2 - Regras")
-    print("3 - Placar")
-    print("4 - Sair")
-    opcao = int(input("Escolha uma opção: "))
+print("Saindo do jogo. Até a próxima!")
