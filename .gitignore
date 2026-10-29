@@ -1,0 +1,7 @@
+# Configurações locais de editores
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.log
