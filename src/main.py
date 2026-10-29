@@ -6,7 +6,7 @@ vitoria_1 = 0
 vitoria_2 = 0
 empates = 0
 
-while opcao != 4:
+while opcao != "4":
     print("==============================")
     print("Bem-vindo ao Jogo de Dama!")
     print("==============================")
@@ -14,8 +14,8 @@ while opcao != 4:
     print("2 - Regras")
     print("3 - Placar")
     print("4 - Sair")
-    opcao = int(input("Escolha uma opção: "))
-    if opcao == 1:
+    opcao = input("Escolha uma opção: ")
+    if opcao == "1":
         print("Digite o nome do Jogador 1:")
         jogador_1 = input("Jogador 1: ")
         print("Digite o nome do Jogador 2:")
@@ -36,12 +36,12 @@ while opcao != 4:
             print("Empate!")
         else:
             print("Resultado inválido.")
-    elif opcao == 2:
+    elif opcao == "2":
         print("==============================")
         print("REGRAS EM DESENVOLVIMENTO.....")
         print("==============================")
 
-    elif opcao == 3:
+    elif opcao == "3":
         print("==============================")
         print("Placar:")
         if jogador_1 == "":
@@ -61,7 +61,7 @@ while opcao != 4:
         print(f"Empates: {empates}")
         print("==============================")
     
-    elif opcao != 4:
+    elif opcao != "4":
         print("Opção inválida. Selecione uma opção novamente.")
 
 print("Saindo do jogo. Até a próxima!")
