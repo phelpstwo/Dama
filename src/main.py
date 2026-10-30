@@ -16,9 +16,8 @@ while opcao_menu != "4":
     print("4 - Sair")
     opcao_menu = input("Escolha uma opção: ")
     if opcao_menu == "1":
-        print("Digite o nome do Jogador 1:")
+        print("Digite o nome dos jogadores:")
         nome_jogador1 = input("Jogador 1: ")
-        print("Digite o nome do Jogador 2:")
         nome_jogador2 = input("Jogador 2: ")
         print("Iniciando o jogo de dama...")
         print("==============================")
