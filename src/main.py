@@ -62,6 +62,9 @@ while opcao_menu != "4":
         print("==============================")
     
     elif opcao_menu != "4":
-        print("Opção inválida. Selecione uma opção novamente.")
+        print("====================================================")
+        print("Opção inválida! Escolha uma opção do menu novamente.")
+        print("====================================================")
+        input("Pressione Enter para continuar...")
 
 print("Saindo do jogo. Até a próxima!")
