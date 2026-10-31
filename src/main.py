@@ -7,13 +7,13 @@ qtd_vitorias2 = 0
 empates = 0
 
 while opcao_menu != "4":
-    print("==============================")
+    print("====================================")
     print("Bem-vindo ao Jogo de Dama!")
-    print("==============================")
     print("1 - Jogar")
     print("2 - Regras")
     print("3 - Placar")
     print("4 - Sair")
+    print("====================================")
     opcao_menu = input("Escolha uma opção: ")
     if opcao_menu == "1":
         print("Digite o nome dos jogadores:")
@@ -37,13 +37,12 @@ while opcao_menu != "4":
         else:
             print("Resultado inválido.")
     elif opcao_menu == "2":
-        print("==============================")
-        print("REGRAS EM DESENVOLVIMENTO.....")
-        print("==============================")
+            print("============= [Regras] =============")
+            print("REGRAS EM DESENVOLVIMENTO.....")
+            print("====================================")
 
     elif opcao_menu == "3":
-        print("==============================")
-        print("Placar:")
+        print("============= [Placar] =============")    
         if nome_jogador1 == "":
             print(f"Jogador 1: {qtd_vitorias1} vitórias")
         else:
@@ -59,7 +58,7 @@ while opcao_menu != "4":
             else:
                 print(f"{nome_jogador2}: {qtd_vitorias2} vitórias")
         print(f"Empates: {empates}")
-        print("==============================")
+        print("====================================")
     
     elif opcao_menu != "4":
         print("====================================================")
