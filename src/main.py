@@ -16,10 +16,10 @@ while opcao_menu != "4":
     print("====================================")
     opcao_menu = input("Escolha uma opção: ")
     if opcao_menu == "1":
-        print("Digite o nome dos jogadores:")
+        print("========[Nome dos Jogadores]========")
         nome_jogador1 = input("Jogador 1: ")
         nome_jogador2 = input("Jogador 2: ")
-        print(f"Seja bem-vindo(a) {nome_jogador1} e {nome_jogador2}!")
+        print(f"\nSeja bem-vindo(a) {nome_jogador1} e {nome_jogador2}!")
         print("Iniciando o jogo de dama...")
         print("==============================")
         print("JOGO EM DESENVOLVIMENTO.....")
