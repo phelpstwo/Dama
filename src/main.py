@@ -8,6 +8,8 @@ qtd_vitorias2 = 0
 empates = 0
 
 while opcao_menu != "4":
+    
+    print("\n" * 50)
     print("====================================")
     print("Bem-vindo ao Jogo de Dama!")
     print("1 - Jogar")
@@ -16,6 +18,7 @@ while opcao_menu != "4":
     print("4 - Sair")
     print("====================================")
     opcao_menu = input("Escolha uma opção: ")
+    print("\n" * 50)
     
     if opcao_menu == "1":
         opcao_aux = None
@@ -24,6 +27,7 @@ while opcao_menu != "4":
             print("========[Nome dos Jogadores]========")
             nome_jogador1 = input("Jogador 1: ")
             nome_jogador2 = input("Jogador 2: ")
+            print("\n" * 50)
             print(f"\nSeja bem-vindo(a) {nome_jogador1} e {nome_jogador2}!")
             print("Iniciando o jogo de dama...")
             print("==============================")
@@ -58,6 +62,7 @@ while opcao_menu != "4":
             if opcao_aux == "1":
                 break
             else:
+                print("\n" * 50)
                 print("Opção invália. Escolha um opção novamente.\n")
 
     elif opcao_menu == "3":
@@ -87,9 +92,11 @@ while opcao_menu != "4":
             if opcao_aux == "1":
                 break
             else:
+                print("\n" * 50)
                 print("Opção invália. Escolha um opção novamente.\n")
     
     elif opcao_menu != "4":
+        print("\n" * 50)
         print("====================================================")
         print("Opção inválida! Escolha uma opção do menu novamente.")
         print("====================================================")
