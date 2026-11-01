@@ -24,6 +24,7 @@ while opcao_menu != "4":
         opcao_aux = None
         
         while opcao_aux != "4":
+            print("\n" * 50)
             print("========[Nome dos Jogadores]========")
             nome_jogador1 = input("Jogador 1: ")
             nome_jogador2 = input("Jogador 2: ")
@@ -53,6 +54,7 @@ while opcao_menu != "4":
         opcao_aux = None
         
         while opcao_aux != "1":
+            print("\n" * 50)
             print("============= [Regras] =============")
             print("REGRAS EM DESENVOLVIMENTO.....\n")
             print("1 - Voltar ao menu inicial")
@@ -63,12 +65,16 @@ while opcao_menu != "4":
                 break
             else:
                 print("\n" * 50)
-                print("Opção invália. Escolha um opção novamente.\n")
+                print("====================================================")
+                print("Opção inválida! Escolha uma opção do menu novamente.")
+                print("====================================================")
+                input("Pressione Enter para continuar...")
 
     elif opcao_menu == "3":
         opcao_aux = None
         
         while opcao_aux != "1":
+            print("\n" * 50)
             print("============= [Placar] =============")    
             if nome_jogador1 == "":
                 print(f"Jogador 1: {qtd_vitorias1} vitórias")
@@ -93,7 +99,10 @@ while opcao_menu != "4":
                 break
             else:
                 print("\n" * 50)
-                print("Opção invália. Escolha um opção novamente.\n")
+                print("====================================================")
+                print("Opção inválida! Escolha uma opção do menu novamente.")
+                print("====================================================")
+                input("Pressione Enter para continuar...")
     
     elif opcao_menu != "4":
         print("\n" * 50)
