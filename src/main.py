@@ -1,5 +1,6 @@
 #MENU JOGO DE DAMA
 opcao_menu = None
+opcao_aux = None
 nome_jogador1 = ""
 nome_jogador2 = ""
 qtd_vitorias1 = 0
@@ -15,50 +16,78 @@ while opcao_menu != "4":
     print("4 - Sair")
     print("====================================")
     opcao_menu = input("Escolha uma opção: ")
+    
     if opcao_menu == "1":
-        print("========[Nome dos Jogadores]========")
-        nome_jogador1 = input("Jogador 1: ")
-        nome_jogador2 = input("Jogador 2: ")
-        print(f"\nSeja bem-vindo(a) {nome_jogador1} e {nome_jogador2}!")
-        print("Iniciando o jogo de dama...")
-        print("==============================")
-        print("JOGO EM DESENVOLVIMENTO.....")
-        print("==============================")
-        resultado = int(input("Digite o resultado do jogo (1 para Jogador 1, 2 para Jogador 2, 3 para empate): "))
-        if resultado == 1:
-            qtd_vitorias1 += 1
-            print(f"Jogador {nome_jogador1} venceu!")
-        elif resultado == 2:
-            qtd_vitorias2 += 1
-            print(f"Jogador {nome_jogador2} venceu!")
-        elif resultado == 3:
-            empates += 1
-            print("Empate!")
-        else:
-            print("Resultado inválido.")
+        opcao_aux = None
+        
+        while opcao_aux != "4":
+            print("========[Nome dos Jogadores]========")
+            nome_jogador1 = input("Jogador 1: ")
+            nome_jogador2 = input("Jogador 2: ")
+            print(f"\nSeja bem-vindo(a) {nome_jogador1} e {nome_jogador2}!")
+            print("Iniciando o jogo de dama...")
+            print("==============================")
+            print("JOGO EM DESENVOLVIMENTO.....")
+            print("==============================")
+            opcao_aux = input("Digite o resultado do jogo (1 para Jogador 1, 2 para Jogador 2, 3 para empate ou 4 para sair): ")
+            
+            if opcao_aux == "1":
+                qtd_vitorias1 += 1
+                print(f"Jogador {nome_jogador1} venceu!")
+            elif opcao_aux == "2":
+                qtd_vitorias2 += 1
+                print(f"Jogador {nome_jogador2} venceu!")
+            elif opcao_aux == "3":
+                empates += 1
+                print("Empate!")
+            elif opcao_aux == "4":
+                break
+            else:
+                print("Resultado inválido.")
+                
     elif opcao_menu == "2":
+        opcao_aux = None
+        
+        while opcao_aux != "1":
             print("============= [Regras] =============")
-            print("REGRAS EM DESENVOLVIMENTO.....")
+            print("REGRAS EM DESENVOLVIMENTO.....\n")
+            print("1 - Voltar ao menu inicial")
             print("====================================")
+            opcao_aux = input("Escolha uma opção: ")
+            
+            if opcao_aux == "1":
+                break
+            else:
+                print("Opção invália. Escolha um opção novamente.\n")
 
     elif opcao_menu == "3":
-        print("============= [Placar] =============")    
-        if nome_jogador1 == "":
-            print(f"Jogador 1: {qtd_vitorias1} vitórias")
-        else:
-            if qtd_vitorias1 == 1:
-                print(f"{nome_jogador1}: {qtd_vitorias1} vitória")
+        opcao_aux = None
+        
+        while opcao_aux != "1":
+            print("============= [Placar] =============")    
+            if nome_jogador1 == "":
+                print(f"Jogador 1: {qtd_vitorias1} vitórias")
             else:
-                print(f"{nome_jogador1}: {qtd_vitorias1} vitórias")
-        if nome_jogador2 == "":
-            print(f"Jogador 2: {qtd_vitorias2} vitórias")
-        else:
-            if qtd_vitorias2 == 1:
-                print(f"{nome_jogador2}: {qtd_vitorias2} vitória")
+                if qtd_vitorias1 == 1:
+                    print(f"{nome_jogador1}: {qtd_vitorias1} vitória")
+                else:
+                    print(f"{nome_jogador1}: {qtd_vitorias1} vitórias")
+            if nome_jogador2 == "":
+                print(f"Jogador 2: {qtd_vitorias2} vitórias")
             else:
-                print(f"{nome_jogador2}: {qtd_vitorias2} vitórias")
-        print(f"Empates: {empates}")
-        print("====================================")
+                if qtd_vitorias2 == 1:
+                    print(f"{nome_jogador2}: {qtd_vitorias2} vitória")
+                else:
+                    print(f"{nome_jogador2}: {qtd_vitorias2} vitórias")
+            print(f"Empates: {empates}\n")
+            print("1 - Voltar ao menu inicial")
+            print("====================================")
+            opcao_aux = input("Escolha uma opção: ")
+                
+            if opcao_aux == "1":
+                break
+            else:
+                print("Opção invália. Escolha um opção novamente.\n")
     
     elif opcao_menu != "4":
         print("====================================================")
