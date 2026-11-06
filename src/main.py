@@ -1,3 +1,4 @@
+```
 opcao_menu = None
 opcao_aux = None
 
@@ -402,7 +403,8 @@ while opcao_menu != "4":
         
         while opcao_aux != "1":
             print("\n" * 50)
-            print("============= [Placar] =============")    
+            print("============= [Placar] =============")
+            
             if nome_jogador1 == "":
                 print(f"Jogador 1: {qtd_vitorias1} vitórias")
             else:
@@ -410,6 +412,7 @@ while opcao_menu != "4":
                     print(f"{nome_jogador1}: {qtd_vitorias1} vitória")
                 else:
                     print(f"{nome_jogador1}: {qtd_vitorias1} vitórias")
+                    
             if nome_jogador2 == "":
                 print(f"Jogador 2: {qtd_vitorias2} vitórias")
             else:
@@ -417,14 +420,26 @@ while opcao_menu != "4":
                     print(f"{nome_jogador2}: {qtd_vitorias2} vitória")
                 else:
                     print(f"{nome_jogador2}: {qtd_vitorias2} vitórias")
-            print(f"Empates: {empates}\n")
+                    
+            print(f"Empates: {empates}")
+            print(f"Partidas jogadas: {total_partidas}\n")
+
+            if total_partidas > 0:
+                pct_vitorias1 = qtd_vitorias1 * 100 / total_partidas
+                pct_vitorias2 = qtd_vitorias2 * 100 / total_partidas
+                pct_empates = empates * 100 / total_partidas
+                print(f"Aproveitamento de {nome_jogador1}: {pct_vitorias1:.1f}%")
+                print(f"Aproveitamento de {nome_jogador2}: {pct_vitorias2:.1f}%")
+                print(f"Empates: {pct_empates:.1f}%\n")
+            else:
+                print("Nenhuma partida jogada ainda.\n")
+
+            print(f"Séries ganhas: {nome_jogador1} {series_ganhas1} x {series_ganhas2} {nome_jogador2}\n")
             print("1 - Voltar ao menu inicial")
             print("====================================")
             opcao_aux = input("Escolha uma opção: ")
                 
-            if opcao_aux == "1":
-                break
-            else:
+            if opcao_aux != "1":
                 print("\n" * 50)
                 print("====================================================")
                 print("Opção inválida! Escolha uma opção do menu novamente.")
@@ -439,3 +454,4 @@ while opcao_menu != "4":
         input("Pressione Enter para continuar...")
 
 print("Saindo do jogo. Até a próxima!")
+```
