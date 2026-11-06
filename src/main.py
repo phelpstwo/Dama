@@ -10,6 +10,8 @@ total_partidas = 0
 series_ganhas1 = 0
 series_ganhas2 = 0
 
+limites_sem_captura = 20
+
 tabuleiro = [
     [".", ".", ".", ".", ".", "."],
     [".", ".", ".", ".", ".", "."],
@@ -298,10 +300,10 @@ while opcao_menu != "4":
                                         motivo_fim = "O adversário ficou sem peças."
                                     else:
                                         motivo_fim = "O adversário ficou sem movimentos."
-                                elif sem_captura >= 20:
+                                elif sem_captura >= limites_sem_captura:
                                     vencedor = 0
                                     terminou = True
-                                    motivo_fim = "20 jogadas seguidas sem captura."
+                                    motivo_fim = f"{limites_sem_captura} jogadas seguidas sem captura."
                                 else:
                                     turno = proximo
                                     
