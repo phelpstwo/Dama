@@ -1,6 +1,9 @@
+# Copyright (c) 2026  Philipe Gabriel Silva Gomes Calado, Yan Elvis Ramos Dias, João Davi Bastos da Silva
+
 # =====================================================================
 #                    JOGO DE DAMAS 6x6 NO TERMINAL
 # =====================================================================
+
 opcao_menu = None
 opcao_aux = None
 
