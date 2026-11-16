@@ -66,10 +66,11 @@ Você só precisa do **Python 3.6 ou superior** e do arquivo `main.py`.
 
    Se o Windows disser que `python` não é reconhecido, tente `py main.py`.
 
+</details>
+
+
 > [!NOTE]
 > Se os acentos aparecerem trocados, use o **Windows Terminal** ou o **PowerShell** em vez do Prompt de Comando antigo.
-
-</details>
 
 <details>
 <summary><b>🍎 macOS</b></summary>
@@ -132,13 +133,13 @@ Você só precisa do **Python 3.6 ou superior** e do arquivo `main.py`.
 
 </details>
 
+> [!WARNING]
+> Instale o Termux pelo **F-Droid** ou pelas **Releases do GitHub** do projeto ([github.com/termux/termux-app](https://github.com/termux/termux-app)). A versão da **Google Play Store está desatualizada** e causa erros na instalação de pacotes.
+
 <details>
 <summary><b>🤖 Android (Termux)</b></summary>
 
 <br>
-
-> [!WARNING]
-> Instale o Termux pelo **F-Droid** ou pelas **Releases do GitHub** do projeto ([github.com/termux/termux-app](https://github.com/termux/termux-app)). A versão da **Google Play Store está desatualizada** e causa erros na instalação de pacotes.
 
 1. **Instale o Termux** por uma das fontes acima e abra o app.
 2. **Atualize os pacotes** e **instale Python e Git**.
@@ -147,7 +148,6 @@ Você só precisa do **Python 3.6 ou superior** e do arquivo `main.py`.
    pkg update && pkg upgrade
    pkg install python git
    ```
-> [!TIP]
 > Se perguntar algo, responda `Y` ou `y`.
 
 3. **Baixe o jogo e entre na pasta:**
@@ -171,10 +171,10 @@ cd ~/storage/downloads
 python main.py
 ```
 
+</details>
+
 > [!TIP]
 > Se o texto quebrar de linha no meio das telas, gire o celular para o modo **paisagem**.
-
-</details>
 
 <details>
 <summary><b>📱 iPhone / iPad (a-Shell)</b></summary>
@@ -207,10 +207,11 @@ Recomendo o **[a-Shell](https://apps.apple.com/app/a-shell/id1473805438)**, pois
    python3 main.py
    ```
 
-> [!NOTE]
-> No a-Shell, o iOS só deixa o app escrever na própria pasta (`~/Documents`). Para acessar arquivos de outros apps, use o comando `pickFolder`.
 
 </details>
+
+> [!NOTE]
+> No a-Shell, o iOS só deixa o app escrever na própria pasta (`~/Documents`). Para acessar arquivos de outros apps, use o comando `pickFolder`.
 
 ### 🛠️ Problemas comuns
 
@@ -326,13 +327,13 @@ Não foram usadas funções próprias, bibliotecas, dicionários, tuplas, conjun
 
 | Integrante | GitHub | Responsabilidades |
 |---|---|---|
-| **Philipe Gabriel** | [@phelpstwo](https://github.com/phelpstwo) | Líder técnico, organização estrutural do projeto, dinâmica séries e turnos, bom como movimentação, promoção e captura de peças. |
-| **Yan Elvis** | [@yanelvisdiasdias-del](https://github.com/yanelvisdiasdias-del) | Menu de inical, menu de regras e menu das séries. |
-| **João Davi** | [@joaodavi45186-maker](https://github.com/joaodavi45186-maker) | Menu do placar, validação das entradas dentro dos menus e implementação da opção de sair/voltar nos menus. |
+| <nobr><a href="https://github.com"><img src="https://avatars.githubusercontent.com/u/221894956?v=4&s256" width="30" style="border-radius: 5px;" height="30" align="absmiddle" alt="phelpstwo"></a> <b>Philipe Gabriel</b></nobr> | [@phelpstwo](https://github.com/phelpstwo) | Líder técnico, organização estrutural do projeto, dinâmica séries e turnos, assim como a movimentação, promoção e captura de peças. |
+| <nobr><a href="https://github.com"><img src="https://avatars.githubusercontent.com/u/265902690?v=4&s256" style="border-radius: 5px;" width="30" height="30" align="absmiddle" alt="yanelvisdiasdias-del"></a> <b>Yan Elvis</b></nobr> | [@yanelvisdiasdias-del](https://github.com/yanelvisdiasdias-del) | Menu inicial, menu de regras e menu das séries. |
+| <nobr><a href="https://github.com"><img src="https://avatars.githubusercontent.com/u/334740170?v=4&s256" style="border-radius: 5px;" width="30" height="30" align="absmiddle" alt="joaodavi45186-maker"></a> <b>João Davi</b></nobr> | [@joaodavi45186-maker](https://github.com/joaodavi45186-maker) | Menu do placar, validação das entradas dentro dos menus e implementação da opção de sair/voltar nos menus. |
 
 ---
 
 ## 🔗 Links
 
-- 📄 **Relatório técnico:** (a ser anexado)
-- 🎬 **Vídeo explicativo:** (a ser axenado)
+- 📄 **Relatório técnico:** [Relatório](https://docs.google.com/document/d/1I06i3GMg9EqrpElCGeSL98Mx-THv1ETu/edit?usp=sharing&ouid=109950991158146001142&rtpof=true&sd=true)
+- 🎬 **Vídeo explicativo:** (Vídeo)(https://youtu.be/RouV68Xjv84)
